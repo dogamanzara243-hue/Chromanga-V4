@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromanga V4 - Türkçe Manga Oku</title>
+    <meta name="description" content="En güncel mangaları yüksek kalitede Türkçe oku.">
+    <meta name="keywords" content="manga oku, türkçe manga, webtoon oku, chromanga">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-flex">
+            <h1 class="logo" onclick="location.href='index.html'">Chromanga<span>V4</span></h1>
+            <div class="nav-links">
+                <input type="text" id="mangaSearch" placeholder="Manga ara...">
+                <a href="https://www.buymeacoffee.com/KULLANICI_ADIN" target="_blank" class="donate-btn">☕ Bağış Yap</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="manga-detail" class="hidden">
+            <button onclick="closeDetail()" class="back-btn">⬅ Geri Dön</button>
+            <div class="detail-content">
+                <img id="detail-img" src="" alt="">
+                <div class="detail-text">
+                    <h2 id="detail-title"></h2>
+                    <p id="detail-desc"></p>
+                    <div id="chapter-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="manga-list" class="manga-grid"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
